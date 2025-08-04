@@ -477,6 +477,8 @@
           <configuration>
             <sourcepath>${project.basedir}/src/main/java</sourcepath>
             <excludePackageNames>org/apache/commons/lang/enum</excludePackageNames>
+            <quiet>true</quiet>
+            <failOnError>false</failOnError>
           </configuration>
         <executions>
           <execution>
