@@ -479,6 +479,7 @@
             <excludePackageNames>org/apache/commons/lang/enum</excludePackageNames>
             <quiet>true</quiet>
             <failOnError>false</failOnError>
+            <additionalOptions>-Xdoclint:none</additionalOptions>
           </configuration>
         <executions>
           <execution>
