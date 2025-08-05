@@ -437,6 +437,7 @@
     <commons.jira.id>LANG</commons.jira.id>
     <commons.jira.pid>12310481</commons.jira.pid>
     <random.exclude.test>**/RandomUtilsFreqTest.java</random.exclude.test>
+    <gpg.skip>true</gpg.skip>
   </properties> 
 
 
