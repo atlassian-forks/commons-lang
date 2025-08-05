@@ -15,10 +15,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<project
-    xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-parent</artifactId>
@@ -27,7 +24,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>commons-lang</groupId>
   <artifactId>commons-lang</artifactId>
-  <version>2.7-atlassian-1-m01-SNAPSHOT</version>
+  <version>2.7-atlassian-1-m01-765edcc9</version>
   <name>Apache Commons Lang</name>
 
   <inceptionYear>2001</inceptionYear>
@@ -54,7 +51,7 @@
     <connection>scm:git:git@github.com:atlassian-forks/commons-lang.git</connection>
     <developerConnection>scm:git:git@github.com:atlassian-forks/commons-lang.git</developerConnection>
     <url>https://github.com/atlassian-forks/commons-lang.git</url>
-    <tag>HEAD</tag>
+    <tag>commons-lang-2.7-atlassian-1-m01-765edcc9</tag>
   </scm>
 
     <developers>
@@ -81,7 +78,7 @@
             <name>Henri Yandell</name>
             <id>bayard</id>
             <email>bayard@apache.org</email>
-            <organization/>
+            <organization />
             <roles>
                 <role>Java Developer</role>
             </roles>
@@ -90,7 +87,7 @@
             <name>Steven Caswell</name>
             <id>scaswell</id>
             <email>stevencaswell@apache.org</email>
-            <organization/>
+            <organization />
             <roles>
                 <role>Java Developer</role>
             </roles>
@@ -100,7 +97,7 @@
             <name>Robert Burrell Donkin</name>
             <id>rdonkin</id>
             <email>rdonkin@apache.org</email>
-            <organization/>
+            <organization />
             <roles>
                 <role>Java Developer</role>
             </roles>
@@ -119,7 +116,7 @@
             <name>Phil Steitz</name>
             <id>psteitz</id>
             <email>phil@steitz.com</email>
-            <organization/>
+            <organization />
             <roles>
                 <role>Java Developer</role>
             </roles>
@@ -127,8 +124,8 @@
         <developer>
             <name>Fredrik Westermarck</name>
             <id>fredrik</id>
-            <email/>
-            <organization/>
+            <email />
+            <organization />
             <roles>
                 <role>Java Developer</role>
             </roles>
@@ -526,7 +523,7 @@
       <profile>
         <id>test-random-freq</id>
         <properties>
-          <random.exclude.test/>
+          <random.exclude.test />
         </properties> 
         <build>
           <plugins>
