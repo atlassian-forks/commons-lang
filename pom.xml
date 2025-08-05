@@ -473,12 +473,13 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.6.0</version>
+        <version>2.6</version>
           <configuration>
             <sourcepath>${project.basedir}/src/main/java</sourcepath>
             <excludePackageNames>org/apache/commons/lang/enum</excludePackageNames>
             <quiet>true</quiet>
             <failOnError>false</failOnError>
+            <additionalparam>-Xdoclint:none</additionalparam>
           </configuration>
         <executions>
           <execution>
