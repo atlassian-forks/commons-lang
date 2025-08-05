@@ -5,9 +5,9 @@
  * The ASF licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -28,13 +28,13 @@ import java.util.TreeMap;
  * <p>
  * Provides HTML and XML entity utilities.
  * </p>
- * 
+ *
  * @see <a href="http://hotwired.lycos.com/webmonkey/reference/special_characters/">ISO Entities</a>
  * @see <a href="http://www.w3.org/TR/REC-html32#latin1">HTML 3.2 Character Entities for ISO Latin-1</a>
  * @see <a href="http://www.w3.org/TR/REC-html40/sgml/entities.html">HTML 4.0 Character entity references</a>
  * @see <a href="http://www.w3.org/TR/html401/charset.html#h-5.3">HTML 4.01 Character References</a>
  * @see <a href="http://www.w3.org/TR/html401/charset.html#code-position">HTML 4.01 Code positions</a>
- * 
+ *
  * @author <a href="mailto:alex@purpletech.com">Alexander Day Chaffee</a>
  * @author <a href="mailto:ggregory@seagullsw.com">Gary Gregory</a>
  * @since 2.0
@@ -61,12 +61,12 @@ class Entities {
         {"brvbar", "166"}, // broken bar = broken vertical bar
         {"sect", "167"}, // section sign
         {"uml", "168"}, // diaeresis = spacing diaeresis
-        {"copy", "169"}, // � - copyright sign
+        {"copy", "169"}, // © - copyright sign
         {"ordf", "170"}, // feminine ordinal indicator
         {"laquo", "171"}, // left-pointing double angle quotation mark = left pointing guillemet
         {"not", "172"}, // not sign
         {"shy", "173"}, // soft hyphen = discretionary hyphen
-        {"reg", "174"}, // � - registered trademark sign
+        {"reg", "174"}, // ® - registered trademark sign
         {"macr", "175"}, // macron = spacing macron = overline = APL overbar
         {"deg", "176"}, // degree sign
         {"plusmn", "177"}, // plus-minus sign = plus-or-minus sign
@@ -84,70 +84,70 @@ class Entities {
         {"frac12", "189"}, // vulgar fraction one half = fraction one half
         {"frac34", "190"}, // vulgar fraction three quarters = fraction three quarters
         {"iquest", "191"}, // inverted question mark = turned question mark
-        {"Agrave", "192"}, // � - uppercase A, grave accent
-        {"Aacute", "193"}, // � - uppercase A, acute accent
-        {"Acirc", "194"}, // � - uppercase A, circumflex accent
-        {"Atilde", "195"}, // � - uppercase A, tilde
-        {"Auml", "196"}, // � - uppercase A, umlaut
-        {"Aring", "197"}, // � - uppercase A, ring
-        {"AElig", "198"}, // � - uppercase AE
-        {"Ccedil", "199"}, // � - uppercase C, cedilla
-        {"Egrave", "200"}, // � - uppercase E, grave accent
-        {"Eacute", "201"}, // � - uppercase E, acute accent
-        {"Ecirc", "202"}, // � - uppercase E, circumflex accent
-        {"Euml", "203"}, // � - uppercase E, umlaut
-        {"Igrave", "204"}, // � - uppercase I, grave accent
-        {"Iacute", "205"}, // � - uppercase I, acute accent
-        {"Icirc", "206"}, // � - uppercase I, circumflex accent
-        {"Iuml", "207"}, // � - uppercase I, umlaut
-        {"ETH", "208"}, // � - uppercase Eth, Icelandic
-        {"Ntilde", "209"}, // � - uppercase N, tilde
-        {"Ograve", "210"}, // � - uppercase O, grave accent
-        {"Oacute", "211"}, // � - uppercase O, acute accent
-        {"Ocirc", "212"}, // � - uppercase O, circumflex accent
-        {"Otilde", "213"}, // � - uppercase O, tilde
-        {"Ouml", "214"}, // � - uppercase O, umlaut
+        {"Agrave", "192"}, // À - uppercase A, grave accent
+        {"Aacute", "193"}, // Á - uppercase A, acute accent
+        {"Acirc", "194"}, // Â - uppercase A, circumflex accent
+        {"Atilde", "195"}, // Ã - uppercase A, tilde
+        {"Auml", "196"}, // Ä - uppercase A, umlaut
+        {"Aring", "197"}, // Å - uppercase A, ring
+        {"AElig", "198"}, // Æ - uppercase AE
+        {"Ccedil", "199"}, // Ç - uppercase C, cedilla
+        {"Egrave", "200"}, // È - uppercase E, grave accent
+        {"Eacute", "201"}, // É - uppercase E, acute accent
+        {"Ecirc", "202"}, // Ê - uppercase E, circumflex accent
+        {"Euml", "203"}, // Ë - uppercase E, umlaut
+        {"Igrave", "204"}, // Ì - uppercase I, grave accent
+        {"Iacute", "205"}, // Í - uppercase I, acute accent
+        {"Icirc", "206"}, // Î - uppercase I, circumflex accent
+        {"Iuml", "207"}, // Ï - uppercase I, umlaut
+        {"ETH", "208"}, // Ð - uppercase Eth, Icelandic
+        {"Ntilde", "209"}, // Ñ - uppercase N, tilde
+        {"Ograve", "210"}, // Ò - uppercase O, grave accent
+        {"Oacute", "211"}, // Ó - uppercase O, acute accent
+        {"Ocirc", "212"}, // Ô - uppercase O, circumflex accent
+        {"Otilde", "213"}, // Õ - uppercase O, tilde
+        {"Ouml", "214"}, // Ö - uppercase O, umlaut
         {"times", "215"}, // multiplication sign
-        {"Oslash", "216"}, // � - uppercase O, slash
-        {"Ugrave", "217"}, // � - uppercase U, grave accent
-        {"Uacute", "218"}, // � - uppercase U, acute accent
-        {"Ucirc", "219"}, // � - uppercase U, circumflex accent
-        {"Uuml", "220"}, // � - uppercase U, umlaut
-        {"Yacute", "221"}, // � - uppercase Y, acute accent
-        {"THORN", "222"}, // � - uppercase THORN, Icelandic
-        {"szlig", "223"}, // � - lowercase sharps, German
-        {"agrave", "224"}, // � - lowercase a, grave accent
-        {"aacute", "225"}, // � - lowercase a, acute accent
-        {"acirc", "226"}, // � - lowercase a, circumflex accent
-        {"atilde", "227"}, // � - lowercase a, tilde
-        {"auml", "228"}, // � - lowercase a, umlaut
-        {"aring", "229"}, // � - lowercase a, ring
-        {"aelig", "230"}, // � - lowercase ae
-        {"ccedil", "231"}, // � - lowercase c, cedilla
-        {"egrave", "232"}, // � - lowercase e, grave accent
-        {"eacute", "233"}, // � - lowercase e, acute accent
-        {"ecirc", "234"}, // � - lowercase e, circumflex accent
-        {"euml", "235"}, // � - lowercase e, umlaut
-        {"igrave", "236"}, // � - lowercase i, grave accent
-        {"iacute", "237"}, // � - lowercase i, acute accent
-        {"icirc", "238"}, // � - lowercase i, circumflex accent
-        {"iuml", "239"}, // � - lowercase i, umlaut
-        {"eth", "240"}, // � - lowercase eth, Icelandic
-        {"ntilde", "241"}, // � - lowercase n, tilde
-        {"ograve", "242"}, // � - lowercase o, grave accent
-        {"oacute", "243"}, // � - lowercase o, acute accent
-        {"ocirc", "244"}, // � - lowercase o, circumflex accent
-        {"otilde", "245"}, // � - lowercase o, tilde
-        {"ouml", "246"}, // � - lowercase o, umlaut
+        {"Oslash", "216"}, // Ø - uppercase O, slash
+        {"Ugrave", "217"}, // Ù - uppercase U, grave accent
+        {"Uacute", "218"}, // Ú - uppercase U, acute accent
+        {"Ucirc", "219"}, // Û - uppercase U, circumflex accent
+        {"Uuml", "220"}, // Ü - uppercase U, umlaut
+        {"Yacute", "221"}, // Ý - uppercase Y, acute accent
+        {"THORN", "222"}, // Þ - uppercase THORN, Icelandic
+        {"szlig", "223"}, // ß - lowercase sharps, German
+        {"agrave", "224"}, // à - lowercase a, grave accent
+        {"aacute", "225"}, // á - lowercase a, acute accent
+        {"acirc", "226"}, // â - lowercase a, circumflex accent
+        {"atilde", "227"}, // ã - lowercase a, tilde
+        {"auml", "228"}, // ä - lowercase a, umlaut
+        {"aring", "229"}, // å - lowercase a, ring
+        {"aelig", "230"}, // æ - lowercase ae
+        {"ccedil", "231"}, // ç - lowercase c, cedilla
+        {"egrave", "232"}, // è - lowercase e, grave accent
+        {"eacute", "233"}, // é - lowercase e, acute accent
+        {"ecirc", "234"}, // ê - lowercase e, circumflex accent
+        {"euml", "235"}, // ë - lowercase e, umlaut
+        {"igrave", "236"}, // ì - lowercase i, grave accent
+        {"iacute", "237"}, // í - lowercase i, acute accent
+        {"icirc", "238"}, // î - lowercase i, circumflex accent
+        {"iuml", "239"}, // ï - lowercase i, umlaut
+        {"eth", "240"}, // ð - lowercase eth, Icelandic
+        {"ntilde", "241"}, // ñ - lowercase n, tilde
+        {"ograve", "242"}, // ò - lowercase o, grave accent
+        {"oacute", "243"}, // ó - lowercase o, acute accent
+        {"ocirc", "244"}, // ô - lowercase o, circumflex accent
+        {"otilde", "245"}, // õ - lowercase o, tilde
+        {"ouml", "246"}, // ö - lowercase o, umlaut
         {"divide", "247"}, // division sign
-        {"oslash", "248"}, // � - lowercase o, slash
-        {"ugrave", "249"}, // � - lowercase u, grave accent
-        {"uacute", "250"}, // � - lowercase u, acute accent
-        {"ucirc", "251"}, // � - lowercase u, circumflex accent
-        {"uuml", "252"}, // � - lowercase u, umlaut
-        {"yacute", "253"}, // � - lowercase y, acute accent
-        {"thorn", "254"}, // � - lowercase thorn, Icelandic
-        {"yuml", "255"}, // � - lowercase y, umlaut
+        {"oslash", "248"}, // ø - lowercase o, slash
+        {"ugrave", "249"}, // ù - lowercase u, grave accent
+        {"uacute", "250"}, // ú - lowercase u, acute accent
+        {"ucirc", "251"}, // û - lowercase u, circumflex accent
+        {"uuml", "252"}, // ü - lowercase u, umlaut
+        {"yacute", "253"}, // ý - lowercase y, acute accent
+        {"thorn", "254"}, // þ - lowercase thorn, Icelandic
+        {"yuml", "255"}, // ÿ - lowercase y, umlaut
     };
 
     // http://www.w3.org/TR/REC-html40/sgml/entities.html
@@ -394,7 +394,7 @@ class Entities {
      * <p>
      * Fills the specified entities instance with HTML 40 entities.
      * </p>
-     * 
+     *
      * @param entities
      *            the instance to be filled.
      */
@@ -409,7 +409,7 @@ class Entities {
          * <p>
          * Add an entry to this entity map.
          * </p>
-         * 
+         *
          * @param name
          *            the entity name
          * @param value
@@ -421,7 +421,7 @@ class Entities {
          * <p>
          * Returns the name of the entity identified by the specified value.
          * </p>
-         * 
+         *
          * @param value
          *            the value to locate
          * @return entity name associated with the specified value
@@ -432,7 +432,7 @@ class Entities {
          * <p>
          * Returns the value of the entity identified by the specified name.
          * </p>
-         * 
+         *
          * @param name
          *            the name to locate
          * @return entity value associated with the specified name
@@ -554,7 +554,7 @@ class Entities {
          * <p>
          * Returns the lookup table for this entity map. The lookup table is created if it has not been previously.
          * </p>
-         * 
+         *
          * @return the lookup table
          */
         private String[] lookupTable() {
@@ -599,7 +599,7 @@ class Entities {
         /**
          * Constructs a new instance of <code>ArrayEntityMap</code> specifying the size by which the array should
          * grow.
-         * 
+         *
          * @param growBy
          *            array will be initialized to and will grow by this amount
          */
@@ -621,7 +621,7 @@ class Entities {
 
         /**
          * Verifies the capacity of the entity array, adjusting the size if necessary.
-         * 
+         *
          * @param capacity
          *            size the array should be
          */
@@ -676,7 +676,7 @@ class Entities {
         /**
          * Constructs a new instance of <code>ArrayEntityMap</code> specifying the size by which the underlying array
          * should grow.
-         * 
+         *
          * @param growBy
          *            array will be initialized to and will grow by this amount
          */
@@ -687,7 +687,7 @@ class Entities {
         /**
          * Performs a binary search of the entity array for the specified key. This method is based on code in
          * {@link java.util.Arrays}.
-         * 
+         *
          * @param key
          *            the key to be found
          * @return the index of the entity array matching the specified key
@@ -762,7 +762,7 @@ class Entities {
      * <p>
      * Adds entities to this entity.
      * </p>
-     * 
+     *
      * @param entityArray
      *            array of entities to be added
      */
@@ -776,7 +776,7 @@ class Entities {
      * <p>
      * Add an entity to this entity.
      * </p>
-     * 
+     *
      * @param name
      *            name of the entity
      * @param value
@@ -790,7 +790,7 @@ class Entities {
      * <p>
      * Returns the name of the entity identified by the specified value.
      * </p>
-     * 
+     *
      * @param value
      *            the value to locate
      * @return entity name associated with the specified value
@@ -803,7 +803,7 @@ class Entities {
      * <p>
      * Returns the value of the entity identified by the specified name.
      * </p>
-     * 
+     *
      * @param name
      *            the name to locate
      * @return entity value associated with the specified name
@@ -816,12 +816,12 @@ class Entities {
      * <p>
      * Escapes the characters in a <code>String</code>.
      * </p>
-     * 
+     *
      * <p>
      * For example, if you have called addEntity(&quot;foo&quot;, 0xA1), escape(&quot;\u00A1&quot;) will return
      * &quot;&amp;foo;&quot;
      * </p>
-     * 
+     *
      * @param str
      *            The <code>String</code> to escape.
      * @return A new escaped <code>String</code>.
@@ -843,7 +843,7 @@ class Entities {
      * Escapes the characters in the <code>String</code> passed and writes the result to the <code>Writer</code>
      * passed.
      * </p>
-     * 
+     *
      * @param writer
      *            The <code>Writer</code> to write the results of the escaping to. Assumed to be a non-null value.
      * @param str
@@ -851,7 +851,7 @@ class Entities {
      * @throws IOException
      *             when <code>Writer</code> passed throws the exception from calls to the {@link Writer#write(int)}
      *             methods.
-     * 
+     *
      * @see #escape(String)
      * @see Writer
      */
@@ -880,12 +880,12 @@ class Entities {
      * <p>
      * Unescapes the entities in a <code>String</code>.
      * </p>
-     * 
+     *
      * <p>
      * For example, if you have called addEntity(&quot;foo&quot;, 0xA1), unescape(&quot;&amp;foo;&quot;) will return
      * &quot;\u00A1&quot;
      * </p>
-     * 
+     *
      * @param str
      *            The <code>String</code> to escape.
      * @return A new escaped <code>String</code>.
@@ -899,7 +899,7 @@ class Entities {
             try {
                 this.doUnescape(stringWriter, str, firstAmp);
             } catch (IOException e) {
-                // This should never happen because ALL the StringWriter methods called by #escape(Writer, String) 
+                // This should never happen because ALL the StringWriter methods called by #escape(Writer, String)
                 // do not throw IOExceptions.
                 throw new UnhandledException(e);
             }
@@ -922,7 +922,7 @@ class Entities {
      * Unescapes the escaped entities in the <code>String</code> passed and writes the result to the
      * <code>Writer</code> passed.
      * </p>
-     * 
+     *
      * @param writer
      *            The <code>Writer</code> to write the results to; assumed to be non-null.
      * @param str
@@ -930,7 +930,7 @@ class Entities {
      * @throws IOException
      *             when <code>Writer</code> passed throws the exception from calls to the {@link Writer#write(int)}
      *             methods.
-     * 
+     *
      * @see #escape(String)
      * @see Writer
      */
